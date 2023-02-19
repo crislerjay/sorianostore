@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer components {
+  /* .card {
+    background-color: theme('colors.white');
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.6');
+    box-shadow: theme('boxShadow.xl');
+  } */
+  .card {
+    @apply shadow-lg mb-4 p-4 rounded-lg
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .flexcommon {
+    @apply flex justify-between items-center
   }
-  to {
-    transform: rotate(360deg);
+  .input {
+    @apply border border-gray-300 rounded w-full p-2 mb-4 rounded-sm shadow-md
   }
+  .heading02 {
+    @apply text-xl text-center mb-4 font-bold
+  }
+  .form {
+    @apply bg-stone-50 p-4 shadow-lg rounded-md
+  }
+  .modal {
+    @apply fixed top-0 left-0 right-0 bottom-0 bg-slate-800
+  }
+  .heading02 {
+    @apply uppercase
+  }
+  .notif {
+    @apply bg-slate-800 text-white p-6
+  }
+  /* ... */
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.notif {
+  position: fixed;
+  top: 4rem;
+  left: 1rem;
+  right: 1rem;
 }
