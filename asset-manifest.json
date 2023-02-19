@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sorianostore/static/css/main.00ae379d.css",
+    "main.js": "/sorianostore/static/js/main.f8c35f75.js",
+    "index.html": "/sorianostore/index.html",
+    "main.00ae379d.css.map": "/sorianostore/static/css/main.00ae379d.css.map",
+    "main.f8c35f75.js.map": "/sorianostore/static/js/main.f8c35f75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00ae379d.css",
+    "static/js/main.f8c35f75.js"
+  ]
+}
